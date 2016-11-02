@@ -39,7 +39,7 @@ class App extends Component {
             <div className="App">
                 <div className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <h2>Socket.IO WebChat</h2>
+                    <h2>Socket.IO WebChat and more!!!!!</h2>
                 </div>
                 <div className="App-body">
                     <ul id="messages"></ul>
