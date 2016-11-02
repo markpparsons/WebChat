@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-rotate infinite 5s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+}
+.App-body #messages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.App-body > form {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.App-body > form > input {
+  flex: 1;
+}
+.App-body > form > button {
+  padding: 10px;
+  width: 100px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-rotate {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
