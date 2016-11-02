@@ -13,3 +13,10 @@ build
 .DS_Store
 .env
 npm-debug.log
+
+.idea/vcs.xml
+*.xml
+.idea/workspace.xml
+*.xml
+*.xml
+*.xml
