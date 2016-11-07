@@ -1,0 +1,50 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; }
+
+.App-logo {
+  animation: App-logo-rotate infinite 5s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center; }
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+  .App-body > #messages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1; }
+  .App-body > div {
+    display: flex;
+    align-items: baseline; }
+    .App-body > div > :first-child {
+      flex: 1;
+      margin-right: 10px; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-rotate {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(360deg); } }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

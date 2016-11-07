@@ -14,5 +14,3 @@ build
 .env
 npm-debug.log
 *.xml
-.idea/.name
-*.iml

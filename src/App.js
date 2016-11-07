@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import logo from './images/logo.png';
-import './App.css';
+/* eslint-disable */
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+/* eslint-enable */
+import Header from './components/Header';
+import Body from './components/Body';
 import io from 'socket.io-client'
 let socket = new io.connect();
 
@@ -36,19 +39,14 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h2>Socket.IO WebChatsdfsdfsdfsdfsdfsdfsdf!</h2>
+            <MuiThemeProvider>
+                <div className="App">
+                    <Header />
+                    <Body
+                        sendMessage={sendMessage}
+                    />
                 </div>
-                <div className="App-body">
-                    <ul id="messages"></ul>
-                    <form action="">
-                        <input id="messageInput" autoComplete="off" />
-                        <button onClick={sendMessage}>Send</button>
-                    </form>
-                </div>
-            </div>
+            </MuiThemeProvider>
         );
     }
 }
