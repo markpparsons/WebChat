@@ -12,7 +12,8 @@ build
 # misc
 .DS_Store
 .env
+.idea
 npm-debug.log
 *.xml
-.idea/.name
+*.css
 *.iml
